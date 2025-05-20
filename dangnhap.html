@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon.ico"
+      type="images/vnd.microsoft.icon"
+    />
+
+    <style>
+      tr th {
+        text-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/trangchu.html"
+        ><img id="logo" src="/images/logo.png" alt="Logo"
+      /></a>
+      <nav>
+        <a href="/trangchu.html">Trang Chủ</a>
+        <a href="/gioithieu.html">Giới Thiệu</a>
+        <a href="/sanpham.html">Sản Phẩm</a>
+        <a href="/tintuc.html">Tin Tức</a>
+        <a href="#">Đăng Nhập</a>
+        <a href="/dangky.html">Đăng Ký</a>
+        <a href="/lienhe.html">Liên Hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <!-- Bao viền xung quanh một nhóm -->
+        <fieldset>
+          <!-- Nhãn cho viền -->
+          <legend>ĐĂNG NHẬP</legend>
+          <!-- 
+            tr: định nghĩa một hàng trong bảng
+            th: ô tiêu đề (ô in đậm)
+            td: nội dung một ô
+          -->
+
+          <!-- 
+          phương thức: gửi    
+          enctype: mã hoá dữ liệu khi gửi -->
+          <form method="post" enctype="application/x-www-form-urlencoded">
+            <table>
+              <tr>
+                <!-- colspan số lượng ô gộp: vd gộp 2 ô  -->
+                <td colspan="2" style="text-align: center">
+                  <img
+                    src="/images/dangnhap/userlogin.png"
+                    alt="Đăng nhập"
+                    width="150"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <!-- Label với for là id của ô nhập liệu: mục đích khi nhấn vào nhãn thì chuyển vào ô nhập liệu -->
+                <th><label for="email">Email</label></th>
+                <td>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Nhập email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><label for="psw">Mật khẩu</label></th>
+                <td>
+                  <input
+                    type="password"
+                    id="psw"
+                    name="psw"
+                    placeholder="Nhập mật khẩu"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="text-align: center">
+                  <input type="submit" value="Đăng Nhập" />
+                  <input type="reset" value="Huỷ" />
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">
+                  <p>
+                    Bạn quên <a href="#">Mật Khẩu? </a>
+                    <input type="checkbox" id="remember" name="remember" />
+                    <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
+                  </p>
+                </th>
+              </tr>
+            </table>
+          </form>
+        </fieldset>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        2021 Bản quyền thuộc về FreeezeVN.
+        <a href="https://www.facebook.com/login/?locale=vi_VN">facebook</a>
+        <a href="https://x.com/?lang=vi">twitter</a>
+        <a href="https://www.pinterest.com/">pinterest</a>
+        <a href="#logo">Về đầu trang</a>
+      </p>
+    </footer>
+  </body>
+</html>
